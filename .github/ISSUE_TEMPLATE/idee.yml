@@ -1,0 +1,24 @@
+name: 💡 Proposer une idée
+description: Une idée pour améliorer ou changer Mirabelle
+title: "💡 "
+labels: ["idée", "à étudier"]
+body:
+  - type: dropdown
+    id: categorie
+    attributes:
+      label: Catégorie
+      options: [Gameplay, Monstres, Carte, Son, Graphismes, Histoire, Bug, Autre]
+    validations:
+      required: true
+  - type: textarea
+    id: idee
+    attributes:
+      label: Ton idée
+      description: Décris ce que tu voudrais voir changer ou ajouter.
+    validations:
+      required: true
+  - type: textarea
+    id: pourquoi
+    attributes:
+      label: Pourquoi ce serait mieux ?
+      description: Facultatif. Ce que ça apporterait au jeu, à la peur, au fun…
